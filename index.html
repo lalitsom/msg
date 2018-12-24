@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="assets/main.js" charset="utf-8"></script>
+
+      <link rel="stylesheet" href="assets/main.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css" media="screen" title="no title">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <title>Secret Messages</title>
+  </head>
+  <body>
+
+    <div class="sectin no-pad-bot">
+      <div class="container">
+        <h4>Secret Messages</h4>
+        <br>
+        <div class="row">
+         <div class="input-field col s6">
+           <i class="material-icons prefix">account_circle</i>
+           <input placeholder="Enter Name" id="username_id" type="text" class="validate">
+
+         </div>
+         <div class="input-field col s6">
+           <i class="material-icons prefix">security</i>
+           <input placeholder="Enter Password" id="pwd_id" type="password" class="validate">
+
+         </div>
+         <button class="btn waves-effect waves-light red darken-1" onclick="checkMsg()" >Submit
+           <i class="material-icons right">send</i>
+         </button>
+       </div>
+       <br>
+
+       <blockquote style="display:none" id="error_msg">
+         <p>Error : It didn't quite work out.</p>
+      </blockquote>
+
+      </div>
+    </div>
+
+  </body>
+</html>
